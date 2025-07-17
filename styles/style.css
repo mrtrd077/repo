@@ -10,3 +10,159 @@
     background-color: transparent;
     box-sizing: border-box;
 }
+.content {
+    padding: 69px 28px 0px 120px;
+}
+@font-face{
+        font-family: "Cera Pro";
+        src: url("./fonts/CeraPro-Medium.eot") format("embedded-opentype"),
+             url("./fonts/CeraPro-Medium.woff2") format("woff2"),
+             url("./fonts/CeraPro-Medium.woff") format("woff"),
+             url("./fonts/CeraPro-Medium.ttf") format("truetype");
+             font-weight: 700;
+ }
+ :lang(en) .title {
+    font-family: "Cera Pro";
+    font-weight: 700;
+}
+.title{
+    position: relative;
+    left: 406px;
+    top: -165px;
+}
+@font-face{
+        font-family: "Cera Pro";
+        src: url("./fonts/CeraPro-Light.eot") format("embedded-opentype"),
+             url("./fonts/CeraPro-Light.woff2") format("woff2"),
+             url("./fonts/CeraPro-Light.woff") format("woff"),
+             url("./fonts/CeraPro-Light.ttf") format("truetype");
+             font-weight: 400;
+}
+:lang(ko){
+    font-family: "Cera Pro";
+    font-weight: 400;
+}
+.description {
+    position: relative;
+    left: 275px;
+    top: -156px;
+}
+.btn{
+    display: inline-flex;
+    color: white;
+    background-color: green;
+    padding: 12px 27px 10px 27px;
+    border-radius: 4px;
+    position: relative;
+    left: 400px;
+    top: -136px;
+}
+.cont{
+    padding: 0px 120px 0px 840px;
+    position: relative;
+    top: -400px;
+}
+.menu{
+    padding: 0px 68px;
+}
+.blog-title{
+    position: relative;
+    left: 610px;
+    top: -400px;
+    font-size: 30px;
+}
+:lang(en) .blog-title {
+    font-family: "Cera Pro";
+    font-weight: 700;
+}
+.blog-description {
+    position: relative;
+    left: 480px;
+    top: -380px;
+}
+:lang(ko) .blog-description {
+    font-family: "Cera Pro";
+    font-weight: 400;
+}
+.cactus{
+    position: relative;
+    left: 119px;
+    top: -350px;
+}
+.date{
+    color: green;
+    padding-left: 15px;
+    margin-bottom: 7px;
+}
+.title-cactus{
+    padding-left: 15px;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+:lang(en){
+    font-family: "Cera Pro";
+    font-weight: 700;
+}
+:lang(ko){
+    font-family: "Cera Pro";
+    font-weight: 400;
+}
+.description-cactus{
+    padding-left: 15px;
+    margin-bottom: 7px;
+}
+.btn-cactus{
+    display: inline-flex;
+    padding-left: 15px;
+}
+.succulent{
+    position: relative;
+    left: 431px;
+    top: -680px;
+}
+.title-succulent{
+    padding-left: 15px;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.description-succulent{
+    padding-left: 15px;
+    margin-bottom: 7px;
+}
+.plant{
+    position: relative;
+    left: 743px;
+    top: -1010px;
+}
+.title-plant{
+    padding-left: 15px;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.description-plant{
+    padding-left: 15px;
+    margin-bottom: 7px;
+}
+.btn-plant{
+    display: inline-flex;
+    padding-left: 15px;
+    color: green;
+}
+.house{
+    position: relative;
+    left: 1055px;
+    top: -1340px;
+}
+.title-house{
+    padding-left: 15px;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.description-house{
+    padding-left: 15px;
+    margin-bottom: 7px;
+}
+.btn-house{
+    display: inline-flex;
+    padding-left: 15px;
+}
