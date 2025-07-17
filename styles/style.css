@@ -1,9 +1,158 @@
 *{
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
     box-sizing: border-box;
 }
-img {
-    max-width: 100%;
-    height: auto;
+.categories{
+    padding: 171px 50px 0px 135px;
+}
+.category-title{
+    padding: 14px 199px 7px 18px;
+    font-size: 18px;
+    color: #3D3D3D;
+}
+@font-face{
+        font-family: "Cera Pro";
+        src: url("./fonts/CeraPro-Medium.eot") format("embedded-opentype"),
+             url("./fonts/CeraPro-Medium.woff2") format("woff2"),
+             url("./fonts/CeraPro-Medium.woff") format("woff"),
+             url("./fonts/CeraPro-Medium.ttf") format("truetype");
+             font-weight: 700;
+ }
+:lang(en) {
+    font-family: "Cera Pro";
+    font-weight: 700 ;
+}
+.category-list {
+    font-weight: 400;
+    padding: 0px 189px 377px 30px;
+}
+@font-face{
+        font-family: "Cera Pro";
+        src: url("./fonts/CeraPro-Light.eot") format("embedded-opentype"),
+             url("./fonts/CeraPro-Light.woff2") format("woff2"),
+             url("./fonts/CeraPro-Light.woff") format("woff"),
+             url("./fonts/CeraPro-Light.ttf") format("truetype");
+             font-weight: 400;
+}
+:lang(fr) {
+    font-family: "Cera Pro";
+    font-weight: 400;
+}
+.category-green{
+    color: green; 
+    margin-bottom: 10px;
+}
+.category-item{
+    margin-bottom: 10px;
+}
+.category-item:last-child{
+    margin-bottom: 0;
+}
+.img{
+    padding: 0px 50px 207px 135px;
+}
+@font-face{
+        font-family: "Cera Pro";
+        src: url("./fonts/CeraPro-Black.eot") format("embedded-opentype"),
+             url("./fonts/CeraPro-Black.woff2") format("woff2"),
+             url("./fonts/CeraPro-Black.woff") format("woff"),
+             url("./fonts/CeraPro-Black.ttf") format("truetype");
+             font-weight: 700;
+}
+.img-title{
+    padding: 18px 22px 11px 22px;
+    color: green;
+    font-size: 65px;
+}
+:lang(de){
+    font-family: "Cera Pro";
+    font-weight: 700;
+}
+.sale-title{
+   padding: 0px 72px;
+   color: black;
+   font-size: 23px;
+}
+.menu{
+    display: flex;
+    padding: 171px 107px 31px 540px;
+    position: relative;
+    top: -1540px;
+}
+.menu-list{
+    display: flex;
+    gap: 38px;
+}
+.menu-green{
+    color: green;
+    border-bottom: 3px solid #46A358;
+}
+.sorting-container{
+    display: flex;
+    position: relative;
+    left: 370px;
+}
+.footer{
+    display: flex;
+    padding: 0px 300px 0px 520px;
+    position: relative;
+    top: -1500px;
+}
+:lang(ml) {
+    font-family: "Cera Pro";
+    font-weight: 400;
+}
+:lang(ko) {
+    font-family: "Cera Pro";
+    font-weight: 700;
+}
+.footer-preis{
+    color: green;
+}
+.footer-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 70px;
+}
+.page{
+    display: flex;
+   gap: 10px;
+    padding: 0px 520px 82px 1220px;
+    position: relative;
+    top: -1410px;
+}
+.page-green{
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    padding: 7px;
+}
+.page-item {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    padding: 7px;
+}
+.page-next{
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    padding: 7px;
 }
