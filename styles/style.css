@@ -10,13 +10,22 @@
     background-color: transparent;
     box-sizing: border-box;
 }
+.main{
+    display: flex;
+    padding: 171px 105px  135px;
+}
 .categories{
-    padding: 171px 50px 0px 135px;
+    position: relative;
+    width: 310px;
+    height: 1244px;
+    background-color: #FBFBFB;
+    
 }
 .category-title{
-    padding: 14px 199px 7px 18px;
     font-size: 18px;
     color: #3D3D3D;
+    margin-bottom: 7px;
+    padding-left: 18px;
 }
 @font-face{
         font-family: "Cera Pro";
@@ -32,7 +41,10 @@
 }
 .category-list {
     font-weight: 400;
-    padding: 0px 189px 377px 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    margin-bottom: 377px;
 }
 @font-face{
         font-family: "Cera Pro";
@@ -57,7 +69,8 @@
     margin-bottom: 0;
 }
 .img{
-    padding: 0px 50px 207px 135px;
+    position: relative;
+    right: 30px;
 }
 @font-face{
         font-family: "Cera Pro";
@@ -67,45 +80,11 @@
              url("./fonts/CeraPro-Black.ttf") format("truetype");
              font-weight: 700;
 }
-.img-title{
-    padding: 18px 22px 11px 22px;
-    color: green;
-    font-size: 65px;
-}
 :lang(de){
     font-family: "Cera Pro";
     font-weight: 700;
 }
-.sale-title{
-   padding: 0px 72px;
-   color: black;
-   font-size: 23px;
-}
-.menu{
-    display: flex;
-    padding: 171px 107px 31px 540px;
-    position: relative;
-    top: -1540px;
-}
-.menu-list{
-    display: flex;
-    gap: 38px;
-}
-.menu-green{
-    color: green;
-    border-bottom: 3px solid #46A358;
-}
-.sorting-container{
-    display: flex;
-    position: relative;
-    left: 370px;
-}
-.footer{
-    display: flex;
-    padding: 0px 300px 0px 520px;
-    position: relative;
-    top: -1500px;
-}
+
 :lang(ml) {
     font-family: "Cera Pro";
     font-weight: 400;
@@ -114,45 +93,66 @@
     font-family: "Cera Pro";
     font-weight: 700;
 }
-.footer-preis{
-    color: green;
+.menu {
+    display: flex;
+    white-space: nowrap;
+    padding-left: 50px;
+    width: 838px;
+    height: 23px;
 }
-.footer-list{
+.menu-list {
+   display: flex;
+   gap: 38px;
+}
+.menu-green {
+    color: green;
+    border-bottom: 3px solid green;
+}
+.by, .sorting {
+    position: relative;
+    left: 385px;
+}
+.footer-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
-    gap: 70px;
+    gap: 41px ;
+   position: relative;
+   right: 33%;
+   padding-top: 31px;
+   flex-wrap: wrap;
+   align-items: flex-end;
 }
-.page{
+.footer-item-image {
+    background-color: #FBFBFB;
+}
+.footer-preis {
+    color: #46A358;
+}
+.page {
     display: flex;
-   gap: 10px;
-    padding: 0px 520px 82px 1220px;
     position: relative;
-    top: -1410px;
-}
-.page-green{
-    color: white;
-    background-color: green;
-    border: none;
-    border-radius: 4px;
-    text-align: center;
-    padding: 7px;
+    top: 1321px;
+    right: 50%;
+    gap: 10px;
 }
 .page-item {
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
+    color: #3D3D3D;
+    border: 1px solid #E5E5E5;
+    width: 30px;
+    height: 30px;
     border-radius: 4px;
-    text-align: center;
-    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.page-next{
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
+.page-green {
+    color: white;
+    background-color: #46A358;
+    border: none;
+    width: 30px;
+    height: 30px;
     border-radius: 4px;
-    text-align: center;
-    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
