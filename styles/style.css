@@ -26,6 +26,7 @@
 }
 .nav-item {
     font-family: sans-serif;
+    font-weight: 400;
     color: #3D3D3D;
     font-size: 16px;
     font-style: normal;
@@ -119,4 +120,90 @@
 :lang(ko){
     font-family: "Cera Pro";
     font-weight: 500;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+
+}
+.nav li {
+  position: relative;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Выпадающее меню */
+.sub-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e8f5e9; /* светло-зеленый фон */
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 160px;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000; /* чтобы меню было поверх других элементов */
+}
+
+.sub-nav li {
+  padding: 8px 20px;
+}
+
+.sub-nav li a {
+  color: #333;
+  font-weight: normal;
+}
+
+/* Показ меню при наведении */
+.nav-item.active:hover .sub-nav {
+  display: block;
+}
+
+/* Для пункта с подменю (стрелочка) */
+.sub-menu::after {
+  content: ">";
+  float: right;
+}
+.sub-sub-nav {
+    position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #EDF6EE;
+  padding: 10px 0;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.sub-sub-nav li{
+    padding: 8px 20px;
+}
+.sub-sub-nav li a {
+  color: #333;
+  font-weight: normal;
+}
+.sub-menu:hover .sub-sub-nav {
+  display: block;
+}
+.sub-menu:hover{
+    background-color: green;
+    color: #e8f5e9;
+    font-size: 16px;
+}
+.sub-menu a:hover{
+    color: #e8f5e9;
+    background-color: green;
+}
+.sub-menu:hover::after{
+    content: "<";
+    float: right;
+    color: #e8f5e9;
 }
