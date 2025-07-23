@@ -10,22 +10,18 @@
     background-color: transparent;
     box-sizing: border-box;
 }
-.main{
-    display: flex;
-    padding: 171px 105px  135px;
+
+@font-face{
+        font-family: "Cera Pro";
+        src: url("./fonts/CeraPro-Light.eot") format("embedded-opentype"),
+             url("./fonts/CeraPro-Light.woff2") format("woff2"),
+             url("./fonts/CeraPro-Light.woff") format("woff"),
+             url("./fonts/CeraPro-Light.ttf") format("truetype");
+             font-weight: 400;
 }
-.categories{
-    position: relative;
-    width: 310px;
-    height: 1244px;
-    background-color: #FBFBFB;
-    
-}
-.category-title{
-    font-size: 18px;
-    color: #3D3D3D;
-    margin-bottom: 7px;
-    padding-left: 18px;
+:lang(fr) {
+    font-family: "Cera Pro";
+    font-weight: 400;
 }
 @font-face{
         font-family: "Cera Pro";
@@ -39,55 +35,17 @@
     font-family: "Cera Pro";
     font-weight: 700 ;
 }
-.category-list {
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-    margin-bottom: 377px;
-}
-@font-face{
-        font-family: "Cera Pro";
-        src: url("./fonts/CeraPro-Light.eot") format("embedded-opentype"),
-             url("./fonts/CeraPro-Light.woff2") format("woff2"),
-             url("./fonts/CeraPro-Light.woff") format("woff"),
-             url("./fonts/CeraPro-Light.ttf") format("truetype");
-             font-weight: 400;
-}
-:lang(fr) {
-    font-family: "Cera Pro";
-    font-weight: 400;
-}
-.category-green{
-    color: green; 
-    margin-bottom: 10px;
-}
-.category-item{
-    margin-bottom: 10px;
-}
-.category-item:last-child{
-    margin-bottom: 0;
-}
-.img{
-    position: relative;
-    right: 30px;
-}
-@font-face{
-        font-family: "Cera Pro";
-        src: url("./fonts/CeraPro-Black.eot") format("embedded-opentype"),
-             url("./fonts/CeraPro-Black.woff2") format("woff2"),
-             url("./fonts/CeraPro-Black.woff") format("woff"),
-             url("./fonts/CeraPro-Black.ttf") format("truetype");
-             font-weight: 700;
-}
-:lang(de){
-    font-family: "Cera Pro";
-    font-weight: 700;
-}
-
 :lang(ml) {
     font-family: "Cera Pro";
     font-weight: 400;
+}
+:lang(ko) {
+    font-family: "Cera Pro";
+    font-weight: 700;
+}
+.main{
+    display: flex;
+    padding: 171px 105px  135px;
 }
 :lang(ko) {
     font-family: "Cera Pro";
@@ -104,6 +62,9 @@
    display: flex;
    gap: 38px;
 }
+.menu-item {
+    color: #3D3D3D;
+}
 .menu-green {
     color: green;
     border-bottom: 3px solid green;
@@ -111,6 +72,7 @@
 .by, .sorting {
     position: relative;
     left: 385px;
+    color: #3D3D3D;
 }
 .footer-list {
     display: grid;
@@ -125,34 +87,67 @@
 .footer-item-image {
     background-color: #FBFBFB;
 }
+.footer-item-title {
+    color: #3D3D3D;
+}
 .footer-preis {
     color: #46A358;
 }
-.page {
-    display: flex;
+img{
+    background-color: #FBFBFB;
+}
+.footer-item-active:hover {
+    border-top:1px solid green;
+}
+.product-image {
+    width: 100%;
+    display: block;
+}
+.product-card{
     position: relative;
-    top: 1321px;
-    right: 50%;
-    gap: 10px;
+    width: 250px;
+    text-align: center;
 }
-.page-item {
-    color: #3D3D3D;
-    border: 1px solid #E5E5E5;
-    width: 30px;
-    height: 30px;
-    border-radius: 4px;
+.icon-overlay{
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 18px;
+    opacity: 0;
 }
-.page-green {
-    color: white;
+.icon:hover{
+    background-color: white;
+    padding: 7px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-card:hover .icon-overlay{
+    opacity: 1;
+}
+.offer{
+    position: absolute;
+    top: 14px;
+    left: 0;
+    color: #FFFFFF;
     background-color: #46A358;
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 4px;
+    padding: 7px 9px;
+
+}
+.preis-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 16px;
+}
+.offer-container {
+    position: relative;
+    display: inline-block;
+}
+.old-preis{
+    color: #A5A5A5;
+    text-decoration: line-through;
 }
